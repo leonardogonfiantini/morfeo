@@ -1,7 +1,16 @@
 <script lang="ts" setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue'
+</script>
+
+<script lang="ts">
+export default {
+  name: "App",
+  components: {
+    Navbar
+  }
+}
 </script>
 
 <template>
-  <HelloWorld/>
+  <Navbar />
 </template>
