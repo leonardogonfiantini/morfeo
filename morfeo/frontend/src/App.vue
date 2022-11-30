@@ -1,5 +1,7 @@
 <script lang="ts" setup>
+
 import Navbar from './components/Navbar.vue'
+
 </script>
 
 <script lang="ts">
@@ -9,6 +11,9 @@ export default {
     Navbar
   }
 }
+
+localStorage.theme = 'light'
+
 </script>
 
 <template>
