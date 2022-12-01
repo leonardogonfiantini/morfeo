@@ -1,6 +1,6 @@
 # morfeo
 
-<img src="https://m.media-amazon.com/images/I/71Gp8iJg+uL.jpg" />
+<img src="https://covers.openlibrary.org/b/id/6497729-L.jpg" width: />
 
 morfeo is a dream journal which is based on the book: Exploring the world of lucid dreaming by Howard Rheingold.
 in fact morfeo provides everything you need to have for tracking your lucid dreams and set your next goals.
