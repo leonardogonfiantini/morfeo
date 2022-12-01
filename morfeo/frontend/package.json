@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@babel/types": "^7.18.10",
+    "@types/node": "^18.11.10",
     "@vitejs/plugin-vue": "^3.0.3",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",

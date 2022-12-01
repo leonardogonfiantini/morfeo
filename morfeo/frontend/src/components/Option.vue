@@ -5,13 +5,19 @@
 export default {
     name: "Option",
     props: {
-        name: String
+        path: String,
+    },
+    methods: {
+        imageSrc: function(name: String) {
+            console.log(name)
+            return new URL(`../assets/images/${name}.png`, import.meta.url).href;
+        }
     }
 }
 </script>
 
 <template>
     <main>
-        <p class="relative z-10 text-black"> {{ name }} </p>
+        <img :src="imageSrc(`${path}`)" alt="" />
     </main>
 </template>
