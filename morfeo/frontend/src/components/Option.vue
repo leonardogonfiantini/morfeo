@@ -9,7 +9,6 @@ export default {
     },
     methods: {
         imageSrc: function(name: String) {
-            console.log(name)
             return new URL(`../assets/images/${name}.png`, import.meta.url).href;
         }
     }
@@ -18,6 +17,6 @@ export default {
 
 <template>
     <main>
-        <img :src="imageSrc(`${path}`)" alt="" />
+        <img :src="imageSrc(`${path}`)" class="relative w-3/4 m-auto p-2" alt="" />
     </main>
 </template>
