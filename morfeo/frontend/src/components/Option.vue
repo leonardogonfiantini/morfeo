@@ -17,6 +17,6 @@ export default {
 
 <template>
     <main>
-        <img :src="imageSrc(`${path}`)" class="relative w-3/4 m-auto p-2" alt="" />
+        <img :src="imageSrc(`${path}`)" class="relative w-3/4 m-auto p-2 hover:cursor-pointer" alt="" />
     </main>
 </template>

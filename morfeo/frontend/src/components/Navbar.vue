@@ -1,5 +1,9 @@
 <script lang="ts" setup>
-import Option from './Option.vue'
+  
+  import Option from './Option.vue'
+  import Planner from './Planner.vue'
+  import Goals from './Goals.vue'
+  import Settings from './Settings.vue'
 
 </script>
 
@@ -28,28 +32,40 @@ export default {
                 button?.classList.remove("anim-light")
                 button?.classList.add("anim-dark")
               }
-          }
+          },
+      
+    OpenPlanner: function() {
+      console.log("planner")
+    },
+
+    OpenGoals: function() {
+      console.log("goals")
+    },
+
+    OpenSettings: function() {
+      console.log("settings")
+    }
   }
 }
 </script>
 
 <template>
   <main>
-    <div class="relative w-24 h-screen rounded-r-2xl
+    <div class="relative w-24 h-screen rounded-r-2xl z-10
               text-font dark:text-font-dark bg-menu dark:bg-menu-dark">
       <ul>
-        <li> <Option path="planner" /> </li>
-        <li> <Option path="goal" /> </li>
-        <li> <Option path="settings" /> </li>
+        <li> <Option @click="OpenPlanner" path="planner" /> </li>
+        <li> <Option @click="OpenGoals" path="goal" /> </li>
+        <li> <Option @click="OpenSettings" path="settings" /> </li>
       </ul>
 
       <div class="absolute bottom-5">
-        <button id="btn-switch" @click="switchTheme()" class="relative left-3 w-20 h-9 rounded-full z-10
+        <button id="btn-switch" @click="switchTheme()" class="relative left-2 w-20 h-9 rounded-full z-10
                                                             bg-secondary text-font dark:bg-secondary-dark"> 
-          switchh
+          color
         </button>
 
-        <div class="absolute left-2 top-1 w-20 h-9 rounded-full bg-black"> </div>
+        <div class="absolute left-1 top-1 w-20 h-9 rounded-full bg-black"> </div>
 
       </div>
 
@@ -69,12 +85,12 @@ export default {
 
   @keyframes switch-light {
     0% {}
-    100% {left:8px; top:4px;}
+    100% {left:4px; top:4px;}
   }
 
   @keyframes switch-dark {
     0% {}
-    100% {left:8; top:0px}
+    100% {left:8px; top:0px}
   }
 
 
